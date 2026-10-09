@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Styles and Layouts</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background-color: #ffffff;
+            color: #212529;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Top Title */
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 20px 0;
+            line-height: 1.2;
+            color: #111111;
+        }
+
+        /* Horizontal Line */
+        hr {
+            border: none;
+            border-top: 1px solid #e2e8f0;
+            margin-bottom: 25px;
+        }
+
+        /* Subtitle Section */
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 0 12px 0;
+            color: #111111;
+        }
+
+        p.description {
+            font-size: 15px;
+            margin: 0 0 25px 0;
+            color: #222222;
+        }
+
+        /* Side-by-Side Flex Layout */
+        .cards-container {
+            display: flex;
+            gap: 15px;
+        }
+
+        .card {
+            flex: 1;
+            border: 1px solid #dcdfe3;
+            border-radius: 5px;
+            padding: 20px 22px;
+            background-color: #fbfbfc;
+            box-sizing: border-box;
+        }
+
+        .card h3 {
+            font-size: 17px;
+            font-weight: bold;
+            margin: 0 0 12px 0;
+            color: #111111;
+        }
+
+        /* Sidebar Box (Italic Text) */
+        .sidebar-text {
+            font-size: 15px;
+            font-style: italic;
+            margin: 0;
+            color: #333333;
+            line-height: 1.4;
+        }
+
+        /* Main Content Box (Uppercase Text) */
+        .main-text {
+            font-size: 14px;
+            text-transform: uppercase;
+            margin: 0;
+            color: #333333;
+            line-height: 1.5;
+            letter-spacing: 0.2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Main Title -->
+        <h1>CSS Text Styles and<br>Layouts</h1>
+
+        <hr>
+
+        <!-- Content Section -->
+        <h2>Simple Web Layout Using CSS</h2>
+        <p class="description">This is a simple example of a web layout using various CSS text styles.</p>
+
+        <!-- Two Columns Container -->
+        <div class="cards-container">
+            
+            <!-- Left Box: Sidebar -->
+            <div class="card">
+                <h3>Sidebar</h3>
+                <p class="sidebar-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <!-- Right Box: Main Content -->
+            <div class="card">
+                <h3>Main Content</h3>
+                <p class="main-text">SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA.</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
